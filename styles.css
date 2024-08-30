@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* * {
+    border: 2px solid red;
+} */
+
 body {
     font-family: "roboto", sans-serif;
     display: flex;
@@ -78,4 +82,51 @@ body {
     width: auto;
     border: 3px solid #f9faf8;
     border-radius: 25px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 32px 256px;
+    gap: 32px;
+}
+
+.info .title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.info .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .media {
+    display: flex;
+    min-width: 160px;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.media .content {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    border: 2px solid #1f2937;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.media .text {
+    width: 125px;
+    text-align: center;
 }
